@@ -139,6 +139,7 @@ parameter[8:0]  BEGINNING = 0,
 				UNMOVE_100_20 = 423,
 				STORE1 = 427,
 				CMP = 427,
+				FINISH = 428,
 				STORE2 = 429;
 
 
@@ -3669,7 +3670,7 @@ parameter[8:0]  BEGINNING = 0,
 			op[24:20] <= 5'b0;
 			op[19:15] <= 5'b0;
 			op[14:10] <= 5'b0;
-			op[9:1] <= STORE1;
+			op[9:1] <= FINISH;
 			op[0] <= 1'b0;
 		end
 		//STORE2
